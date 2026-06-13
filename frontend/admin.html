@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Agent Logs</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Agent Reasoning Dashboard</h1>
+      <nav>
+        <a href="/index.html" class="nav-link">← Customer Chat</a>
+        <span id="ws-status" class="ws-status ws-disconnected">Disconnected</span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-page">
+    <section class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Total Requests</span>
+        <span id="stat-total" class="stat-value">0</span>
+      </div>
+      <div class="stat-card stat-approved">
+        <span class="stat-label">Approved</span>
+        <span id="stat-approved" class="stat-value">0</span>
+      </div>
+      <div class="stat-card stat-denied">
+        <span class="stat-label">Denied</span>
+        <span id="stat-denied" class="stat-value">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Avg Tools / Request</span>
+        <span id="stat-avg-tools" class="stat-value">0</span>
+      </div>
+    </section>
+
+    <section class="log-feed-section">
+      <h2>Live Reasoning Feed</h2>
+      <div id="log-feed" class="log-feed"></div>
+    </section>
+  </main>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

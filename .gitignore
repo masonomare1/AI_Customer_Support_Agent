@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+venv/
+backend/data/support.db
+.DS_Store
+config.bat
+node_modules
