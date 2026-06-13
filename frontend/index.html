@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Customer Support — Refunds</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>AI Refund Support</h1>
+      <nav>
+        <a href="/admin.html" class="nav-link">Admin Dashboard →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="chat-page">
+    <aside class="sidebar">
+      <label for="customer-select">Select Customer</label>
+      <select id="customer-select">
+        <option value="">Loading customers…</option>
+      </select>
+      <div id="customer-info" class="customer-info"></div>
+    </aside>
+
+    <section class="chat-panel">
+      <div id="chat-window" class="chat-window" aria-live="polite"></div>
+
+      <div class="input-area">
+        <button id="mic-btn" class="icon-btn" title="Voice input" aria-label="Start voice input">🎤</button>
+        <input type="text" id="message-input" placeholder="Describe your refund request…" autocomplete="off">
+        <button id="send-btn" class="primary-btn">Send</button>
+        <button id="mute-btn" class="icon-btn" title="Toggle speech" aria-label="Toggle speech synthesis">🔊</button>
+      </div>
+      <p id="mic-status" class="mic-status"></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
